@@ -21,6 +21,7 @@ softdepend:
   - PlaceholderAPI
   - Oraxen
   - ItemsAdder
+  - MvndiEquipment
 commands:
   breweryx:
     description: Mostly admin commands to create/modify Brews and drunkenness

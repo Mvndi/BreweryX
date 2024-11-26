@@ -6,7 +6,7 @@ plugins {
     id("com.gradleup.shadow") version "8.3.5"
 }
 
-val langVersion: Int = 17
+val langVersion: Int = 21
 val encoding = "UTF-8"
 
 group = "com.dre.brewery"
@@ -14,6 +14,7 @@ version = "3.3.5-SNAPSHOT"
 
 repositories {
     mavenCentral()
+	mavenLocal() // mvndicraft, local sources
     maven("https://jitpack.io") // GriefPrevention, SlimeFun, PlaceholderAPI
     maven("https://repo.md-5.net/content/groups/public/") // Bungee
     maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots/") // Spigot
@@ -53,6 +54,7 @@ dependencies {
     compileOnly("me.clip:placeholderapi:2.11.5") // https://www.spigotmc.org/resources/placeholderapi.6245/history
     compileOnly("io.th0rgal:oraxen:1.163.0")
     compileOnly("com.github.LoneDev6:API-ItemsAdder:3.6.1")
+	compileOnly("net.mvndicraft:mvndiequipment:2.0.0-SNAPSHOT") // mvndicraft
 
 	implementation("com.google.code.gson:gson:2.11.0")
     implementation("org.jetbrains:annotations:16.0.2") // https://www.jetbrains.com/help/idea/annotating-source-code.html
